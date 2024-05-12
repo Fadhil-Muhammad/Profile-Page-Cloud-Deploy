@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(230, 228, 228);
+}
+
+.header{
+    font-family: "Poetsen One", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #121227;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.photo{
+    font-family: "Poetsen One", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.photo img{
+    border: black 10px solid;
+    border-radius: 100px;
+    margin-top: 20px;
+    width: 360px;
+}
+
+
+.content{
+    color: white;
+    margin: auto;
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    background-color: #121227 ;
+    border-radius: 20px ;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.about-me{
+    flex: 2;
+    margin: 10px;
+}
+
+.contact{
+    flex: 1;
+    margin: 10px;
+}
+
+.contact td{
+    padding: 5px;
+}
+
+.about-header{
+    display: flex;
+    justify-content: center;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.logo img{
+    border-radius: 20px;
+    margin: 20px;
+    width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header,
+    .content {
+        width: 90%; 
+    }
+
+    .photo img {
+        width: 250px; 
+    }
+
+    .logo img {
+        width: 80px; 
+    }
+
+    .contact {
+        flex: 1;
+        margin: 5px; 
+        overflow-x: auto; 
+    }
+
+    .about-me {
+        flex: 2;
+        margin: 5px; 
+    }
+}
